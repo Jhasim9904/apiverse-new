@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API-Verse - Your gateway to open and public APIs</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>API-Verse - Your gateway to open and public APIs</h1>
+      <input
+        type="text"
+        id="main-search"
+        placeholder="Search APIs..."
+        oninput="filterAPIs()"
+      />
+    </header>
+
+    <main>
+      <div class="container">
+        <!-- Left Side: Categories -->
+        <div class="categories">
+          <h2>API Categories</h2>
+          <input
+            type="text"
+            id="category-search"
+            placeholder="Search categories..."
+            oninput="filterCategories()"
+          />
+          <ul id="category-list">
+            <li onclick="filterByCategory('Weather')">Weather</li>
+            <li onclick="filterByCategory('Finance')">Finance</li>
+            <li onclick="filterByCategory('Sports')">Sports</li>
+            <li onclick="filterByCategory('Health')">Health</li>
+          </ul>
+        </div>
+
+        <!-- Middle Section: API List -->
+        <div class="api-display">
+          <h2>Available APIs</h2>
+          <div id="api-list">
+            <!-- API data populated via JavaScript -->
+          </div>
+        </div>
+
+        <!-- Right Side: Contribute API Form -->
+        <div class="contribute-api">
+          <h2>Contribute a New API</h2>
+          <form id="contribute-form">
+            <label for="apiName">API Name:</label>
+            <input type="text" id="apiName" required />
+
+            <label for="apiURL">API URL:</label>
+            <input type="url" id="apiURL" required />
+
+            <label for="description">API Description:</label>
+            <textarea id="description" required></textarea>
+
+            <label for="apiCategory">API Category:</label>
+            <input type="text" id="apiCategory" placeholder="Optional" />
+
+            <button type="button" onclick="addAPI()">Add API</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <script src="api_script.js"></script>
+  </body>
+</html>

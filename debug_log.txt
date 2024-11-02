@@ -1,0 +1,28 @@
+Array
+(
+    [name] => Test API
+    [url] => https://testapi.com
+    [description] => This is a test API.
+    [category] => General
+)
+Array
+(
+    [name] => Test API
+    [url] => https://testapi.com
+    [description] => This is a test API.
+    [category] => General
+)
+Array
+(
+    [name] => Test API
+    [url] => https://testapi.com
+    [description] => This is a test API.
+    [category] => General
+)
+Array
+(
+    [name] => Test API
+    [url] => https://testapi.com
+    [description] => This is a test API.
+    [category] => General
+)
